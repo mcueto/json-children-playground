@@ -1,7 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-6 bg-dark text-white">
+          JSON
+        </div>
+
+        <div class="col-6">
+          Mobile Phone
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </template>
 
