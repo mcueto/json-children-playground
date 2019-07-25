@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
