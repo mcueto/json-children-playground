@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-
     <div class="container">
       <div class="row">
-
+        <div class="col-6">
           <v-jsoneditor v-model="json"
                         @input="jsonChanged">
           </v-jsoneditor>
         </div>
 
         <div class="col-6">
-          Mobile Phone
+          <MobilePhone v-bind:json="json">
+          </MobilePhone>
         </div>
 
       </div>
@@ -23,13 +23,16 @@
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import VJsoneditor from 'vue-jsoneditor'
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import MobilePhone from './components/MobilePhone.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    // HelloWorld,
     VJsoneditor,
+    MobilePhone
+  },
   data() {
     return {
       json: {
@@ -55,5 +58,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.jsoneditor {
+  background: white;
 }
 </style>
